@@ -16,7 +16,7 @@ initgraph(&gd , &gm , "..\\bgi");
     
 
     //draw circle
-    for (size_t i = 0; i < Times; i++)
+    for (size_t i = 0; i < Times && !kbhit(); i++)
     {
         //clear from mintor buffer
         // cleardevice();
